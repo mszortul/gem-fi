@@ -1,0 +1,5 @@
+Import('*')
+
+SimObject('FaultObj.py')
+Source('fault_obj.cc')
+DebugFlag('Fault_')

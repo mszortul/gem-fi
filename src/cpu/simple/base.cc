@@ -122,6 +122,13 @@ BaseSimpleCPU::BaseSimpleCPU(BaseSimpleCPUParams *p)
     }
 }
 
+int
+BaseSimpleCPU::get_cur_thread()
+{
+    return curThread;
+}
+
+
 void
 BaseSimpleCPU::init()
 {

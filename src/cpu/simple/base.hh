@@ -95,6 +95,7 @@ class BaseSimpleCPU : public BaseCPU
     virtual ~BaseSimpleCPU();
     void wakeup(ThreadID tid) override;
     void init() override;
+    int get_cur_thread();
   public:
     Trace::InstRecord *traceData;
     CheckerCPU *checker;
